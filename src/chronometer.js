@@ -34,10 +34,6 @@ class Chronometer {
   }
 
   split() {
-  let retorno=this.getMinutes();
-  let final=computeTwoDigitNumber(retorno);
-  retorno=this.getSeconds();
-  final=final+":"+this.computeTwoDigitNumber(retorno);
-  return final;
+  return (this.computeTwoDigitNumber(this.getMinutes()) +':'+this.computeTwoDigitNumber(this.getSeconds()));  }
   }
-}
+

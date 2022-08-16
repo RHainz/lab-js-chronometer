@@ -1,14 +1,10 @@
-let minutes = 12;
-let segundos = 11;
+let currentTime=6122;
 
-function computeTwoDigitNumber(value) {
-    let transf= value.toString();
-    if (transf.length===1){transf="0"+transf};
-    return transf
-}
 
-let retorno=minutes;
-let final=computeTwoDigitNumber(retorno);
-retorno=segundos;
-final=final+":"+computeTwoDigitNumber(retorno);
-console.log(final);
+console.log(Math.abs(Math.floor(currentTime/100)));
+
+
+const reductio=Math.floor(currentTime/100);
+console.log(reductio);
+console.log(Number(parseFloat(currentTime/100-reductio).toFixed(2)));
+

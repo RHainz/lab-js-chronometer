@@ -20,8 +20,9 @@ class Chronometer {
   }
 
   getCentiseconds() {
-    let reductio=Math.floor(this.currentTime/100);
-    return Number((currentTime/100)-Math.floor(this.currentTime/100)).toFixed(2);
+    //let reductio=Math.floor(this.currentTime/100);
+    return (this.currentTime%100);
+    //return (Number((currentTime/100)-Math.floor(this.currentTime/100)).toFixed(2))*100;
   }
 
   computeTwoDigitNumber(value) {
